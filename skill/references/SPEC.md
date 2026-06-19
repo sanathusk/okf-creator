@@ -99,13 +99,13 @@ hierarchy and MUST NOT be used for concept documents:
 
 | Filename     | Purpose                                                |
 |--------------|--------------------------------------------------------|
-| `index.md`   | Directory listing. See §6.                             |
-| `log.md`     | Update history. See §7.                                |
+| `index.md`   | Directory listing. See [6](#6-index-files).                             |
+| `log.md`     | Update history. See [7](#7-log-files-optional).                                |
 
 All other `.md` files are concept documents.
 
 Tags themselves remain a first-class concept — see the `tags`
-frontmatter field in §4.1. OKF does not specify a separate file format
+frontmatter field in [4.1](#4-1-frontmatter). OKF does not specify a separate file format
 for aggregating documents by tag; producers that want a tag-browsing
 view can synthesize one at consumption time by scanning frontmatter.
 
@@ -174,7 +174,7 @@ There are no required body sections. The following section headings have
 |----------------|--------------------------------------------------------|
 | `# Schema`     | Structured description of an asset's columns/fields.   |
 | `# Examples`   | Concrete usage examples, often as fenced code blocks.  |
-| `# Citations`  | External sources backing claims in the body. See §8.   |
+| `# Citations`  | External sources backing claims in the body. See [8](#8-citations).   |
 
 ### 4.3 Example: a concept bound to a resource
 
@@ -346,7 +346,7 @@ A bundle is **conformant** with OKF v0.1 if:
    frontmatter block.
 2. Every frontmatter block contains a non-empty `type` field.
 3. Every reserved filename (`index.md`, `log.md`) follows the structure
-   described in §6 and §7 respectively when present.
+   described in [6](#6-index-files) and [7](#7-log-files-optional) respectively when present.
 
 Consumers SHOULD treat all other constraints as soft guidance. In
 particular, consumers MUST NOT reject a bundle because of:
